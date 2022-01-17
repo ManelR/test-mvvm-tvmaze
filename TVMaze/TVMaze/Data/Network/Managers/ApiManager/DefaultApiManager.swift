@@ -9,14 +9,18 @@ import Foundation
 
 class DefaultApiManager: ApiManagerType {
     
+    public static let shared = DefaultApiManager()
+    
     public func get(url: String, completion: @escaping (HTTPResult<Data,Data>) -> Void) {
         if let url = URL(string: url) {
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
             
             _ = self.makeRequest(request: request, completion: completion)
+            return
         }
         
+        completion(.failure(nil, .createRequest, 0, nil))
     }
 }
 

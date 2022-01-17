@@ -21,6 +21,9 @@
 		3BE9722D2795FA4F00BB151F /* DefaultApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9722C2795FA4F00BB151F /* DefaultApiManager.swift */; };
 		3BE9722F2795FC3C00BB151F /* HTTPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9722E2795FC3C00BB151F /* HTTPResult.swift */; };
 		3BE972312795FC5100BB151F /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972302795FC5100BB151F /* HTTPError.swift */; };
+		3BE972332795FF3C00BB151F /* DefaultTVMazeApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972322795FF3C00BB151F /* DefaultTVMazeApiManager.swift */; };
+		3BE972362795FF5B00BB151F /* TVMazeApiManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972352795FF5B00BB151F /* TVMazeApiManagerType.swift */; };
+		3BE9723C2796005E00BB151F /* ShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9723B2796005E00BB151F /* ShowsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		3BE9722C2795FA4F00BB151F /* DefaultApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultApiManager.swift; sourceTree = "<group>"; };
 		3BE9722E2795FC3C00BB151F /* HTTPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResult.swift; sourceTree = "<group>"; };
 		3BE972302795FC5100BB151F /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		3BE972322795FF3C00BB151F /* DefaultTVMazeApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTVMazeApiManager.swift; sourceTree = "<group>"; };
+		3BE972352795FF5B00BB151F /* TVMazeApiManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeApiManagerType.swift; sourceTree = "<group>"; };
+		3BE9723B2796005E00BB151F /* ShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +115,11 @@
 		3BE971EF2795F72700BB151F /* TVMaze */ = {
 			isa = PBXGroup;
 			children = (
+				3BE972202795F7E200BB151F /* Application */,
+				3BE972212795F7F900BB151F /* Data */,
 				3BE972252795F81700BB151F /* Domain */,
 				3BE972242795F80D00BB151F /* Presentation */,
 				3BE972222795F80000BB151F /* Resources */,
-				3BE972212795F7F900BB151F /* Data */,
-				3BE972202795F7E200BB151F /* Application */,
 			);
 			path = TVMaze;
 			sourceTree = "<group>";
@@ -181,10 +187,9 @@
 		3BE972262795F8E300BB151F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3BE972292795FA2F00BB151F /* ApiManager */,
-				3BE972272795F91200BB151F /* Endpoints.swift */,
-				3BE9722E2795FC3C00BB151F /* HTTPResult.swift */,
-				3BE972302795FC5100BB151F /* HTTPError.swift */,
+				3BE972392796004100BB151F /* Responses */,
+				3BE972382795FFC800BB151F /* Managers */,
+				3BE972372795FFC100BB151F /* Helpers */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -196,6 +201,50 @@
 				3BE9722C2795FA4F00BB151F /* DefaultApiManager.swift */,
 			);
 			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		3BE972342795FF4000BB151F /* TVMazeApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972322795FF3C00BB151F /* DefaultTVMazeApiManager.swift */,
+				3BE972352795FF5B00BB151F /* TVMazeApiManagerType.swift */,
+			);
+			path = TVMazeApiManager;
+			sourceTree = "<group>";
+		};
+		3BE972372795FFC100BB151F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972272795F91200BB151F /* Endpoints.swift */,
+				3BE972302795FC5100BB151F /* HTTPError.swift */,
+				3BE9722E2795FC3C00BB151F /* HTTPResult.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3BE972382795FFC800BB151F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972292795FA2F00BB151F /* ApiManager */,
+				3BE972342795FF4000BB151F /* TVMazeApiManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3BE972392796004100BB151F /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9723A2796005300BB151F /* Shows */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		3BE9723A2796005300BB151F /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9723B2796005E00BB151F /* ShowsResponse.swift */,
+			);
+			path = Shows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,8 +381,11 @@
 				3BE971F52795F72700BB151F /* ViewController.swift in Sources */,
 				3BE9722B2795FA3E00BB151F /* ApiManagerType.swift in Sources */,
 				3BE971F12795F72700BB151F /* AppDelegate.swift in Sources */,
+				3BE972332795FF3C00BB151F /* DefaultTVMazeApiManager.swift in Sources */,
 				3BE972282795F91200BB151F /* Endpoints.swift in Sources */,
+				3BE972362795FF5B00BB151F /* TVMazeApiManagerType.swift in Sources */,
 				3BE972312795FC5100BB151F /* HTTPError.swift in Sources */,
+				3BE9723C2796005E00BB151F /* ShowsResponse.swift in Sources */,
 				3BE9722F2795FC3C00BB151F /* HTTPResult.swift in Sources */,
 				3BE9722D2795FA4F00BB151F /* DefaultApiManager.swift in Sources */,
 				3BE971F32795F72700BB151F /* SceneDelegate.swift in Sources */,
