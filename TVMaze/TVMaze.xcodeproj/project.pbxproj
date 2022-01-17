@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3BE971F12795F72700BB151F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE971F02795F72700BB151F /* AppDelegate.swift */; };
 		3BE971F32795F72700BB151F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE971F22795F72700BB151F /* SceneDelegate.swift */; };
-		3BE971F52795F72700BB151F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE971F42795F72700BB151F /* ViewController.swift */; };
-		3BE971F82795F72700BB151F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE971F62795F72700BB151F /* Main.storyboard */; };
 		3BE971FA2795F72800BB151F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE971F92795F72800BB151F /* Assets.xcassets */; };
 		3BE971FD2795F72800BB151F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE971FB2795F72800BB151F /* LaunchScreen.storyboard */; };
 		3BE972082795F72900BB151F /* TVMazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972072795F72900BB151F /* TVMazeTests.swift */; };
@@ -29,6 +27,11 @@
 		3BE9724A27960DFD00BB151F /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9724927960DFD00BB151F /* RouterType.swift */; };
 		3BE9724C27960E2D00BB151F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9724B27960E2D00BB151F /* ViewModelType.swift */; };
 		3BE9724E27960E4000BB151F /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9724D27960E4000BB151F /* ViewControllerType.swift */; };
+		3BE9725D2796124200BB151F /* ShowListScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE972592796124200BB151F /* ShowListScene.storyboard */; };
+		3BE9725E2796124200BB151F /* ShowListSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9725A2796124200BB151F /* ShowListSceneRouter.swift */; };
+		3BE9725F2796124200BB151F /* ShowListSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9725B2796124200BB151F /* ShowListSceneViewController.swift */; };
+		3BE972602796124200BB151F /* ShowListSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9725C2796124200BB151F /* ShowListSceneViewModel.swift */; };
+		3BE972632796126200BB151F /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972622796126200BB151F /* StoryboardInstantiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +55,6 @@
 		3BE971ED2795F72700BB151F /* TVMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE971F02795F72700BB151F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE971F22795F72700BB151F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BE971F42795F72700BB151F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BE971F72795F72700BB151F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BE971F92795F72800BB151F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE971FC2795F72800BB151F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE971FE2795F72800BB151F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +76,11 @@
 		3BE9724927960DFD00BB151F /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		3BE9724B27960E2D00BB151F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		3BE9724D27960E4000BB151F /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
+		3BE972592796124200BB151F /* ShowListScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowListScene.storyboard; sourceTree = "<group>"; };
+		3BE9725A2796124200BB151F /* ShowListSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListSceneRouter.swift; sourceTree = "<group>"; };
+		3BE9725B2796124200BB151F /* ShowListSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListSceneViewController.swift; sourceTree = "<group>"; };
+		3BE9725C2796124200BB151F /* ShowListSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListSceneViewModel.swift; sourceTree = "<group>"; };
+		3BE972622796126200BB151F /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,9 +188,9 @@
 		3BE972242795F80D00BB151F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3BE972612796125200BB151F /* Helpers */,
+				3BE972582796123200BB151F /* ShowListScene */,
 				3BE9724827960DEF00BB151F /* Base */,
-				3BE971F42795F72700BB151F /* ViewController.swift */,
-				3BE971F62795F72700BB151F /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -326,6 +332,25 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		3BE972582796123200BB151F /* ShowListScene */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972592796124200BB151F /* ShowListScene.storyboard */,
+				3BE9725A2796124200BB151F /* ShowListSceneRouter.swift */,
+				3BE9725B2796124200BB151F /* ShowListSceneViewController.swift */,
+				3BE9725C2796124200BB151F /* ShowListSceneViewModel.swift */,
+			);
+			path = ShowListScene;
+			sourceTree = "<group>";
+		};
+		3BE972612796125200BB151F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972622796126200BB151F /* StoryboardInstantiable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,7 +457,7 @@
 			files = (
 				3BE971FD2795F72800BB151F /* LaunchScreen.storyboard in Resources */,
 				3BE971FA2795F72800BB151F /* Assets.xcassets in Resources */,
-				3BE971F82795F72700BB151F /* Main.storyboard in Resources */,
+				3BE9725D2796124200BB151F /* ShowListScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,11 +482,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE972602796124200BB151F /* ShowListSceneViewModel.swift in Sources */,
+				3BE9725E2796124200BB151F /* ShowListSceneRouter.swift in Sources */,
 				3BE9724A27960DFD00BB151F /* RouterType.swift in Sources */,
-				3BE971F52795F72700BB151F /* ViewController.swift in Sources */,
 				3BE9722B2795FA3E00BB151F /* ApiManagerType.swift in Sources */,
 				3BE971F12795F72700BB151F /* AppDelegate.swift in Sources */,
 				3BE972332795FF3C00BB151F /* DefaultTVMazeApiManager.swift in Sources */,
+				3BE9725F2796124200BB151F /* ShowListSceneViewController.swift in Sources */,
+				3BE972632796126200BB151F /* StoryboardInstantiable.swift in Sources */,
 				3BE9723F279605D800BB151F /* ShowsDomain.swift in Sources */,
 				3BE9724C27960E2D00BB151F /* ViewModelType.swift in Sources */,
 				3BE972282795F91200BB151F /* Endpoints.swift in Sources */,
@@ -509,14 +537,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3BE971F62795F72700BB151F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BE971F72795F72700BB151F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BE971FB2795F72800BB151F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -655,7 +675,7 @@
 				INFOPLIST_FILE = TVMaze/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ShowListScene;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -682,7 +702,7 @@
 				INFOPLIST_FILE = TVMaze/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ShowListScene;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
