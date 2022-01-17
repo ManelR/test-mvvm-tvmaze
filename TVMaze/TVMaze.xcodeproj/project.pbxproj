@@ -32,6 +32,7 @@
 		3BE9725F2796124200BB151F /* ShowListSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9725B2796124200BB151F /* ShowListSceneViewController.swift */; };
 		3BE972602796124200BB151F /* ShowListSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9725C2796124200BB151F /* ShowListSceneViewModel.swift */; };
 		3BE972632796126200BB151F /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972622796126200BB151F /* StoryboardInstantiable.swift */; };
+		3BE9726827962DC300BB151F /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9726727962DC300BB151F /* UIImageView+Download.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		3BE9725B2796124200BB151F /* ShowListSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListSceneViewController.swift; sourceTree = "<group>"; };
 		3BE9725C2796124200BB151F /* ShowListSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListSceneViewModel.swift; sourceTree = "<group>"; };
 		3BE972622796126200BB151F /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		3BE9726727962DC300BB151F /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,9 +348,18 @@
 		3BE972612796125200BB151F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3BE9726627962DAD00BB151F /* UIKit */,
 				3BE972622796126200BB151F /* StoryboardInstantiable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3BE9726627962DAD00BB151F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9726727962DC300BB151F /* UIImageView+Download.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +506,7 @@
 				3BE972282795F91200BB151F /* Endpoints.swift in Sources */,
 				3BE972362795FF5B00BB151F /* TVMazeApiManagerType.swift in Sources */,
 				3BE972312795FC5100BB151F /* HTTPError.swift in Sources */,
+				3BE9726827962DC300BB151F /* UIImageView+Download.swift in Sources */,
 				3BE9723C2796005E00BB151F /* ShowsResponse.swift in Sources */,
 				3BE9724E27960E4000BB151F /* ViewControllerType.swift in Sources */,
 				3BE9722F2795FC3C00BB151F /* HTTPResult.swift in Sources */,

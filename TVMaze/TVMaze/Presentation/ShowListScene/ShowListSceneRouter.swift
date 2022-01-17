@@ -14,7 +14,7 @@ protocol ShowListSceneRouter : RouterType {
 
 // Routes from Login
 enum ShowListSceneRoute: String {
-    case foo
+    case detail
 }
 
 class DefaultShowListSceneRouter: ShowListSceneRouter {
@@ -23,9 +23,12 @@ class DefaultShowListSceneRouter: ShowListSceneRouter {
     func route(to route: ShowListSceneRoute, parameters: Any?...) {
         
         switch route {
-        case .foo:
+        case .detail:
             // TODO:
             print("Go to foo")
+            if let show = parameters[0] as? ShowDomain {
+                
+            }
         }
     }
 }

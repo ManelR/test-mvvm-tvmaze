@@ -64,10 +64,11 @@ class ShowListSceneViewController: UIViewController, ViewControllerType, Storybo
     internal func configTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.prefetchDataSource = self
     }
 }
 
-extension ShowListSceneViewController: UITableViewDelegate, UITableViewDataSource {
+extension ShowListSceneViewController: UITableViewDelegate, UITableViewDataSource, UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewElements.count
     }
@@ -81,14 +82,34 @@ extension ShowListSceneViewController: UITableViewDelegate, UITableViewDataSourc
         var cell : UITableViewCell!
         
         cell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
+        
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
         }
         
         cell.textLabel?.text = show.title
+        if let imageURL = show.imageURL {
+            cell.imageView?.downloaded(from: imageURL) { [weak self] in
+                guard self != nil else {
+                    return
+                }
+                
+                cell.layoutSubviews()
+            }
+        } else {
+            cell.imageView?.image = nil
+        }
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel.didSelectRowAt(indexPath)
+    }
     
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        if indexPaths.count > 0, indexPaths.last!.row >= tableViewElements.count - 1 {
+            self.viewModel.didDisplayLastCell()
+        }
+    }
 }
