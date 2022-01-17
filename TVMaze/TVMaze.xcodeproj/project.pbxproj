@@ -26,6 +26,9 @@
 		3BE9723C2796005E00BB151F /* ShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9723B2796005E00BB151F /* ShowsResponse.swift */; };
 		3BE9723F279605D800BB151F /* ShowsDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9723E279605D800BB151F /* ShowsDomain.swift */; };
 		3BE972472796086E00BB151F /* DefaultTVMazeApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972462796086E00BB151F /* DefaultTVMazeApiManagerTests.swift */; };
+		3BE9724A27960DFD00BB151F /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9724927960DFD00BB151F /* RouterType.swift */; };
+		3BE9724C27960E2D00BB151F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9724B27960E2D00BB151F /* ViewModelType.swift */; };
+		3BE9724E27960E4000BB151F /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9724D27960E4000BB151F /* ViewControllerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		3BE9723B2796005E00BB151F /* ShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsResponse.swift; sourceTree = "<group>"; };
 		3BE9723E279605D800BB151F /* ShowsDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsDomain.swift; sourceTree = "<group>"; };
 		3BE972462796086E00BB151F /* DefaultTVMazeApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTVMazeApiManagerTests.swift; sourceTree = "<group>"; };
+		3BE9724927960DFD00BB151F /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		3BE9724B27960E2D00BB151F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		3BE9724D27960E4000BB151F /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,7 @@
 		3BE972242795F80D00BB151F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3BE9724827960DEF00BB151F /* Base */,
 				3BE971F42795F72700BB151F /* ViewController.swift */,
 				3BE971F62795F72700BB151F /* Main.storyboard */,
 			);
@@ -309,6 +316,16 @@
 			path = TVMazeApiManager;
 			sourceTree = "<group>";
 		};
+		3BE9724827960DEF00BB151F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9724927960DFD00BB151F /* RouterType.swift */,
+				3BE9724B27960E2D00BB151F /* ViewModelType.swift */,
+				3BE9724D27960E4000BB151F /* ViewControllerType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,15 +457,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE9724A27960DFD00BB151F /* RouterType.swift in Sources */,
 				3BE971F52795F72700BB151F /* ViewController.swift in Sources */,
 				3BE9722B2795FA3E00BB151F /* ApiManagerType.swift in Sources */,
 				3BE971F12795F72700BB151F /* AppDelegate.swift in Sources */,
 				3BE972332795FF3C00BB151F /* DefaultTVMazeApiManager.swift in Sources */,
 				3BE9723F279605D800BB151F /* ShowsDomain.swift in Sources */,
+				3BE9724C27960E2D00BB151F /* ViewModelType.swift in Sources */,
 				3BE972282795F91200BB151F /* Endpoints.swift in Sources */,
 				3BE972362795FF5B00BB151F /* TVMazeApiManagerType.swift in Sources */,
 				3BE972312795FC5100BB151F /* HTTPError.swift in Sources */,
 				3BE9723C2796005E00BB151F /* ShowsResponse.swift in Sources */,
+				3BE9724E27960E4000BB151F /* ViewControllerType.swift in Sources */,
 				3BE9722F2795FC3C00BB151F /* HTTPResult.swift in Sources */,
 				3BE9722D2795FA4F00BB151F /* DefaultApiManager.swift in Sources */,
 				3BE971F32795F72700BB151F /* SceneDelegate.swift in Sources */,
