@@ -16,6 +16,11 @@
 		3BE972082795F72900BB151F /* TVMazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972072795F72900BB151F /* TVMazeTests.swift */; };
 		3BE972122795F72900BB151F /* TVMazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972112795F72900BB151F /* TVMazeUITests.swift */; };
 		3BE972142795F72900BB151F /* TVMazeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972132795F72900BB151F /* TVMazeUITestsLaunchTests.swift */; };
+		3BE972282795F91200BB151F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972272795F91200BB151F /* Endpoints.swift */; };
+		3BE9722B2795FA3E00BB151F /* ApiManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9722A2795FA3E00BB151F /* ApiManagerType.swift */; };
+		3BE9722D2795FA4F00BB151F /* DefaultApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9722C2795FA4F00BB151F /* DefaultApiManager.swift */; };
+		3BE9722F2795FC3C00BB151F /* HTTPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9722E2795FC3C00BB151F /* HTTPResult.swift */; };
+		3BE972312795FC5100BB151F /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972302795FC5100BB151F /* HTTPError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		3BE9720D2795F72900BB151F /* TVMazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE972112795F72900BB151F /* TVMazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeUITests.swift; sourceTree = "<group>"; };
 		3BE972132795F72900BB151F /* TVMazeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BE972272795F91200BB151F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		3BE9722A2795FA3E00BB151F /* ApiManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerType.swift; sourceTree = "<group>"; };
+		3BE9722C2795FA4F00BB151F /* DefaultApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultApiManager.swift; sourceTree = "<group>"; };
+		3BE9722E2795FC3C00BB151F /* HTTPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResult.swift; sourceTree = "<group>"; };
+		3BE972302795FC5100BB151F /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,7 @@
 		3BE972212795F7F900BB151F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3BE972262795F8E300BB151F /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -165,6 +176,26 @@
 			children = (
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		3BE972262795F8E300BB151F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972292795FA2F00BB151F /* ApiManager */,
+				3BE972272795F91200BB151F /* Endpoints.swift */,
+				3BE9722E2795FC3C00BB151F /* HTTPResult.swift */,
+				3BE972302795FC5100BB151F /* HTTPError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3BE972292795FA2F00BB151F /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9722A2795FA3E00BB151F /* ApiManagerType.swift */,
+				3BE9722C2795FA4F00BB151F /* DefaultApiManager.swift */,
+			);
+			path = ApiManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +330,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BE971F52795F72700BB151F /* ViewController.swift in Sources */,
+				3BE9722B2795FA3E00BB151F /* ApiManagerType.swift in Sources */,
 				3BE971F12795F72700BB151F /* AppDelegate.swift in Sources */,
+				3BE972282795F91200BB151F /* Endpoints.swift in Sources */,
+				3BE972312795FC5100BB151F /* HTTPError.swift in Sources */,
+				3BE9722F2795FC3C00BB151F /* HTTPResult.swift in Sources */,
+				3BE9722D2795FA4F00BB151F /* DefaultApiManager.swift in Sources */,
 				3BE971F32795F72700BB151F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
