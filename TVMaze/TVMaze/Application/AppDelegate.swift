@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.configNavigationAppearance(application)
+        
         return true
     }
 
@@ -34,3 +35,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    func configNavigationAppearance(_ application: UIApplication) {
+        let backgroundColor = UIColor(red: 60/255, green: 148/255, blue: 139/255, alpha: 1.0)
+
+        application.statusBarStyle = .lightContent
+        // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = backgroundColor
+        UINavigationBar.appearance().tintColor = backgroundColor
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().prefersLargeTitles = true
+        UINavigationBar.appearance().barStyle = .black
+        
+        if #available(iOS 15, *) {
+            // Navigation Bar background color
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = backgroundColor
+            
+            // setup title font color
+            let titleAttribute = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            appearance.titleTextAttributes = titleAttribute
+            appearance.largeTitleTextAttributes = titleAttribute
+            
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        }
+    }
+}
