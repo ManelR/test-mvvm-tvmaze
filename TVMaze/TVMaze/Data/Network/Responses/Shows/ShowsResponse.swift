@@ -7,25 +7,25 @@
 
 import Foundation
 
-typealias ShowsResponse = [Shows]
+typealias ShowsResponse = [ShowResponse]
 
 // MARK: - WelcomeElement
-struct Shows: Codable {
+struct ShowResponse: Codable {
     let id: Int?
     let url: String?
     let name: String?
     let genres: [String]?
-    let rating: Rating?
-    let image: Image?
+    let rating: ShowRatingResponse?
+    let image: ShowImageResponse?
     let summary: String?
 }
 
 // MARK: - Image
-struct Image: Codable {
+struct ShowImageResponse: Codable {
     let medium, original: String?
 }
 
 // MARK: - Rating
-struct Rating: Codable {
+struct ShowRatingResponse: Codable {
     let average: Double?
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 class DefaultTVMazeApiManager: TVMazeApiManagerType {
-    func getShows(page: Int, completion: @escaping (HTTPResult<ShowsResponse,Data>) -> Void) {
+    func getShows(page: Int, completion: @escaping (HTTPResult<ShowsDomain,Data>) -> Void) {
         let api = DefaultApiManager.shared
         let path = "shows?page=\(page)"
         api.get(url: Endpoints().api(path: path)) { result in
@@ -17,7 +17,8 @@ class DefaultTVMazeApiManager: TVMazeApiManagerType {
                 // Decode json
                 if let data = data {
                     if let decodedResponse = try? JSONDecoder().decode(ShowsResponse.self, from: data) {
-                        completion(.success(decodedResponse))
+                        let showsDomain = self.convertShowsResponseIntoDomain(decodedResponse)
+                        completion(.success(showsDomain))
                         return
                     } else {
                         let body = String(decoding: data, as: UTF8.self)
@@ -31,5 +32,14 @@ class DefaultTVMazeApiManager: TVMazeApiManagerType {
                 completion(.failure(errorData, error, status, body))
             }
         }
+    }
+}
+
+extension DefaultTVMazeApiManager {
+    internal func convertShowsResponseIntoDomain(_ input: ShowsResponse) -> ShowsDomain {
+        return input.map { ShowDomain(title: $0.name,
+                                       rating: $0.rating?.average,
+                                       imageURL: $0.image?.medium ?? $0.image?.original,
+                                       summary: $0.summary) }
     }
 }

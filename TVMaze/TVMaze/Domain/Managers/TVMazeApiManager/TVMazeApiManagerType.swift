@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TVMazeApiManagerType {
-    
+    func getShows(page: Int, completion: @escaping (HTTPResult<ShowsDomain,Data>) -> Void)
 }
