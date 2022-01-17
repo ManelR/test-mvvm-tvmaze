@@ -99,13 +99,11 @@
 		3BE971EF2795F72700BB151F /* TVMaze */ = {
 			isa = PBXGroup;
 			children = (
-				3BE971F02795F72700BB151F /* AppDelegate.swift */,
-				3BE971F22795F72700BB151F /* SceneDelegate.swift */,
-				3BE971F42795F72700BB151F /* ViewController.swift */,
-				3BE971F62795F72700BB151F /* Main.storyboard */,
-				3BE971F92795F72800BB151F /* Assets.xcassets */,
-				3BE971FB2795F72800BB151F /* LaunchScreen.storyboard */,
-				3BE971FE2795F72800BB151F /* Info.plist */,
+				3BE972252795F81700BB151F /* Domain */,
+				3BE972242795F80D00BB151F /* Presentation */,
+				3BE972222795F80000BB151F /* Resources */,
+				3BE972212795F7F900BB151F /* Data */,
+				3BE972202795F7E200BB151F /* Application */,
 			);
 			path = TVMaze;
 			sourceTree = "<group>";
@@ -125,6 +123,48 @@
 				3BE972132795F72900BB151F /* TVMazeUITestsLaunchTests.swift */,
 			);
 			path = TVMazeUITests;
+			sourceTree = "<group>";
+		};
+		3BE972202795F7E200BB151F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3BE971F02795F72700BB151F /* AppDelegate.swift */,
+				3BE971F22795F72700BB151F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3BE972212795F7F900BB151F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BE972222795F80000BB151F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BE971F92795F72800BB151F /* Assets.xcassets */,
+				3BE971FB2795F72800BB151F /* LaunchScreen.storyboard */,
+				3BE971FE2795F72800BB151F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BE972242795F80D00BB151F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3BE971F42795F72700BB151F /* ViewController.swift */,
+				3BE971F62795F72700BB151F /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3BE972252795F81700BB151F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,7 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TVMaze/Info.plist;
+				INFOPLIST_FILE = TVMaze/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TVMaze/Info.plist;
+				INFOPLIST_FILE = TVMaze/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
