@@ -42,7 +42,7 @@ extension AppDelegate {
         application.statusBarStyle = .lightContent
         // Override point for customization after application launch.
         UINavigationBar.appearance().barTintColor = backgroundColor
-        UINavigationBar.appearance().tintColor = backgroundColor
+        UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().prefersLargeTitles = true

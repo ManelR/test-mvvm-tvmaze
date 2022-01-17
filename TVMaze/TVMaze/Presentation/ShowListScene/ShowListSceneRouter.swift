@@ -24,11 +24,12 @@ class DefaultShowListSceneRouter: ShowListSceneRouter {
         
         switch route {
         case .detail:
-            // TODO:
-            print("Go to foo")
+            let detailsVC = ShowDetailsSceneViewController.instantiateViewController()
             if let show = parameters[0] as? ShowDomain {
-                
+                detailsVC.setShow(show: show)
             }
+            
+            self.route(next: detailsVC)
         }
     }
 }
