@@ -25,6 +25,7 @@
 		3BE972362795FF5B00BB151F /* TVMazeApiManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972352795FF5B00BB151F /* TVMazeApiManagerType.swift */; };
 		3BE9723C2796005E00BB151F /* ShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9723B2796005E00BB151F /* ShowsResponse.swift */; };
 		3BE9723F279605D800BB151F /* ShowsDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9723E279605D800BB151F /* ShowsDomain.swift */; };
+		3BE972472796086E00BB151F /* DefaultTVMazeApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972462796086E00BB151F /* DefaultTVMazeApiManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		3BE972352795FF5B00BB151F /* TVMazeApiManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeApiManagerType.swift; sourceTree = "<group>"; };
 		3BE9723B2796005E00BB151F /* ShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsResponse.swift; sourceTree = "<group>"; };
 		3BE9723E279605D800BB151F /* ShowsDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsDomain.swift; sourceTree = "<group>"; };
+		3BE972462796086E00BB151F /* DefaultTVMazeApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTVMazeApiManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		3BE972062795F72900BB151F /* TVMazeTests */ = {
 			isa = PBXGroup;
 			children = (
+				3BE972432796084500BB151F /* Data */,
 				3BE972072795F72900BB151F /* TVMazeTests.swift */,
 			);
 			path = TVMazeTests;
@@ -278,6 +281,30 @@
 			isa = PBXGroup;
 			children = (
 				3BE972352795FF5B00BB151F /* TVMazeApiManagerType.swift */,
+			);
+			path = TVMazeApiManager;
+			sourceTree = "<group>";
+		};
+		3BE972432796084500BB151F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972442796084C00BB151F /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BE972442796084C00BB151F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972452796085600BB151F /* TVMazeApiManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3BE972452796085600BB151F /* TVMazeApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				3BE972462796086E00BB151F /* DefaultTVMazeApiManagerTests.swift */,
 			);
 			path = TVMazeApiManager;
 			sourceTree = "<group>";
@@ -433,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BE972082795F72900BB151F /* TVMazeTests.swift in Sources */,
+				3BE972472796086E00BB151F /* DefaultTVMazeApiManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
