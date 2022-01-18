@@ -110,6 +110,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgRating1" destination="fj7-J0-l6V" id="5tt-Fn-6lJ"/>
+                        <outlet property="imgRating2" destination="iXt-hg-k5m" id="TwA-gJ-2yg"/>
+                        <outlet property="imgRating3" destination="g4V-mg-FSk" id="0Zv-a8-Qov"/>
+                        <outlet property="imgRating4" destination="GBP-Jt-1IW" id="2kV-Cx-fco"/>
+                        <outlet property="imgRating5" destination="zZb-Kj-Oi8" id="vAn-pO-LGb"/>
                         <outlet property="imgShow" destination="Y8f-eg-36E" id="dKj-D0-gJd"/>
                         <outlet property="lblShowSummary" destination="DqH-fE-ZR6" id="W4P-gz-qPw"/>
                     </connections>

@@ -38,6 +38,8 @@ class DefaultShowDetailsSceneViewModel: ShowDetailsSceneViewModel {
     var showImage: Published<String?>.Publisher { $_showImage }
     @Published var _showSummary: NSAttributedString?
     var showSummary: Published<NSAttributedString?>.Publisher { $_showSummary }
+    @Published var _showRating: Double?
+    var showRating: Published<Double?>.Publisher { $_showRating }
 }
 
 // MARK: - INPUT IMPLEMENTATION
@@ -64,7 +66,7 @@ extension DefaultShowDetailsSceneViewModel {
                 mutableSummary.addAttributes(attributes, range: NSMakeRange(0, mutableSummary.length))
                 self._showSummary = mutableSummary
             }
-            
+            self._showRating = show.rating
         }
     }
 }
