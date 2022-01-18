@@ -44,7 +44,7 @@ class DefaultTVMazeApiManagerTests: XCTestCase {
         }
     }
 
-    func testconvertShowsResponseIntoDomain() throws {
+    func testConvertShowsResponseIntoDomain() throws {
         // Given
         let showsResponses = [ShowResponse(id: 1,
                                            url: "test_url",

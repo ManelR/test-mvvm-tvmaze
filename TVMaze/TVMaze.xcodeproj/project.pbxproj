@@ -11,7 +11,6 @@
 		3BE971F32795F72700BB151F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE971F22795F72700BB151F /* SceneDelegate.swift */; };
 		3BE971FA2795F72800BB151F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE971F92795F72800BB151F /* Assets.xcassets */; };
 		3BE971FD2795F72800BB151F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE971FB2795F72800BB151F /* LaunchScreen.storyboard */; };
-		3BE972082795F72900BB151F /* TVMazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972072795F72900BB151F /* TVMazeTests.swift */; };
 		3BE972122795F72900BB151F /* TVMazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972112795F72900BB151F /* TVMazeUITests.swift */; };
 		3BE972142795F72900BB151F /* TVMazeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972132795F72900BB151F /* TVMazeUITestsLaunchTests.swift */; };
 		3BE972282795F91200BB151F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972272795F91200BB151F /* Endpoints.swift */; };
@@ -65,7 +64,6 @@
 		3BE971FC2795F72800BB151F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE971FE2795F72800BB151F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BE972032795F72900BB151F /* TVMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BE972072795F72900BB151F /* TVMazeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeTests.swift; sourceTree = "<group>"; };
 		3BE9720D2795F72900BB151F /* TVMazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE972112795F72900BB151F /* TVMazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeUITests.swift; sourceTree = "<group>"; };
 		3BE972132795F72900BB151F /* TVMazeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				3BE972432796084500BB151F /* Data */,
-				3BE972072795F72900BB151F /* TVMazeTests.swift */,
 			);
 			path = TVMazeTests;
 			sourceTree = "<group>";
@@ -547,7 +544,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BE972082795F72900BB151F /* TVMazeTests.swift in Sources */,
 				3BE972472796086E00BB151F /* DefaultTVMazeApiManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
