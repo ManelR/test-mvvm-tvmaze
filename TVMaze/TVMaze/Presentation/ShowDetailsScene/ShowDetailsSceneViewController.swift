@@ -11,7 +11,8 @@ import Combine
 
 class ShowDetailsSceneViewController: UIViewController, ViewControllerType, StoryboardInstantiable {
     // MARK: - IBOUTLETS
-    
+    @IBOutlet var imgShow: UIImageView!
+    @IBOutlet var lblShowSummary: UILabel!
     
     // MARK: - VARs
     private var subscriptions: Set<AnyCancellable> = []
@@ -40,7 +41,18 @@ class ShowDetailsSceneViewController: UIViewController, ViewControllerType, Stor
     func bind() {
         subscriptions = [
             self.viewModel.showTitle.assign(to: \.title, on: self),
+            self.viewModel.showImage.sink {
+                if let imageURL = $0 {
+                    self.imgShow.downloaded(from: imageURL)
+                }
+            },
+            self.viewModel.showSummary.assign(to: \.attributedText, on: self.lblShowSummary)
         ]
+    }
+    
+    func configView() {
+        let font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+        self.lblShowSummary.font = font
     }
     
     // MARK: - ACTIONS

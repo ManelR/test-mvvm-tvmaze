@@ -37,6 +37,7 @@
 		3BE9726F279632FF00BB151F /* ShowDetailsSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9726B279632FF00BB151F /* ShowDetailsSceneRouter.swift */; };
 		3BE97270279632FF00BB151F /* ShowDetailsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9726C279632FF00BB151F /* ShowDetailsSceneViewController.swift */; };
 		3BE97271279632FF00BB151F /* ShowDetailsSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9726D279632FF00BB151F /* ShowDetailsSceneViewModel.swift */; };
+		3BE972732796370800BB151F /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE972722796370800BB151F /* String+HTML.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		3BE9726B279632FF00BB151F /* ShowDetailsSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsSceneRouter.swift; sourceTree = "<group>"; };
 		3BE9726C279632FF00BB151F /* ShowDetailsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsSceneViewController.swift; sourceTree = "<group>"; };
 		3BE9726D279632FF00BB151F /* ShowDetailsSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsSceneViewModel.swift; sourceTree = "<group>"; };
+		3BE972722796370800BB151F /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				3BE9726727962DC300BB151F /* UIImageView+Download.swift */,
+				3BE972722796370800BB151F /* String+HTML.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				3BE9723F279605D800BB151F /* ShowsDomain.swift in Sources */,
 				3BE9726F279632FF00BB151F /* ShowDetailsSceneRouter.swift in Sources */,
 				3BE9724C27960E2D00BB151F /* ViewModelType.swift in Sources */,
+				3BE972732796370800BB151F /* String+HTML.swift in Sources */,
 				3BE972282795F91200BB151F /* Endpoints.swift in Sources */,
 				3BE972362795FF5B00BB151F /* TVMazeApiManagerType.swift in Sources */,
 				3BE972312795FC5100BB151F /* HTTPError.swift in Sources */,
